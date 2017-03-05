@@ -1,0 +1,171 @@
+/* -----------------------------------------------------------------------------------------------	*/
+/* 	AUTHOR		:	FARHEEN RAHIM																	*/
+/* 	DESCRIPTION	:	A PROJECT TO DEVELOP A SINGLE PAGE WEBSIT THAT TALKS ABOUT ME					*/
+/* -----------------------------------------------------------------------------------------------	*/
+
+/* -----------------------------------------------------------------------------------------------	*/
+/* 	TABLE OF CONTENTS:																				*/
+/* -----------------------------------------------------------------------------------------------	*/
+/* 	1. BASE STYLE DEFINITIONS																		*/
+/* 	2. DISPLAY A FIXED HOME SCREEN IMAGE															*/
+/* 	3. STYLING THE TOP MENU																			*/
+/* 	4. CLASS DEFINITIONS FOR TOP MENU / OVERLAY SECTION. THIS KEEPS THE TOP MENU AND LOGO FIXED		*/
+/* 	5. CLASS DEFINITIONS TO DISPLAY MULTIPLE SECTIONS 2,4,6 IN A SINGLE ROW							*/
+/* -----------------------------------------------------------------------------------------------	*/
+
+/* -----------------------------------------------------------------------------------------------	*/
+/* 	BASE STYLE DEFINITIONS																			*/
+/* -----------------------------------------------------------------------------------------------	*/
+/* 	body				: default font style definitions which will be inherited across the webpage	*/
+/* 	.bodyheading 		: dislays the heading with a bigger font size, center aligned 				*/
+/* 	.bodysection 		: pads the sections, center aligned											*/
+/* -----------------------------------------------------------------------------------------------	*/
+
+body{
+	font-family:"Open Sans", sans-serif;
+	font-size: 20px;
+	color:a0a0a0;
+}
+
+.bodyheading {
+	font-size: 100px;
+	text-align:center;
+	color:#FF015D;
+}
+
+.bodysection {
+	padding-top:75px;
+	text-align:center;
+	color:#07CB79;
+}
+
+/* -----------------------------------------------------------------------------------------------	*/
+/* 	DISPLAY A FIXED HOME SCREEN IMAGE													  			*/
+/* -----------------------------------------------------------------------------------------------	*/
+/* 	.homeimage	: 	displays the home page image fixed so subsequent content could scroll on top	*/
+/*					set z-index to 1 so it goes behind the menu which is set a greater z-index		*/
+/* -----------------------------------------------------------------------------------------------	*/
+
+.homeimage{
+	background: url(../images/me.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+}
+
+/* -----------------------------------------------------------------------------------------------	*/
+/* 	STYLING THE TOP MENU																			*/
+/* -----------------------------------------------------------------------------------------------	*/
+/* 	ul.topmenu				: remove the bullets style, float the menu towards right				*/
+/* 	ul.topmenu li 			: vertically position the menu items side by side						*/
+/* 	ul.topmenu li a			: look and feel of the menu item										*/
+/* 	ul.topmenu li a:hover	: upon mouseover, adjust look and feel of the menu item					*/
+/* -----------------------------------------------------------------------------------------------	*/
+
+ul.topmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	float:right;
+}
+
+ul.topmenu li {
+	float:left;
+}
+
+ul.topmenu li a {
+    display: inline-block;
+    //color: #f2f2f2;
+	color:#07CB79;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+ul.topmenu li a:hover {
+	background-color: #666;
+	color:#FF015D;
+}
+
+/* -----------------------------------------------------------------------------------------------	*/
+/* 	CLASS DEFINITIONS FOR TOP MENU / OVERLAY SECTION. THIS KEEPS THE TOP MENU AND LOGO FIXED		*/
+/* -----------------------------------------------------------------------------------------------	*/
+/* 	.overlay_container	: display table, with position of fixed so it fixated regardless of scroll 	*/
+/* 	.overlay_row		: display row															 	*/
+/* 	.overlay_logo		: display cell, align logo towards left									 	*/
+/* 	.overlay_menu		: display cell, adjust padding for the menu								 	*/
+/* -----------------------------------------------------------------------------------------------	*/
+
+.overlay_container {
+	display: table;
+	position:fixed;
+	top:0;
+	left:0;
+	padding:15px;
+	width:100%;
+	z-index:999;
+	background-color:#333;	
+ }
+
+.overlay_row  {
+	display: table-row;
+}
+	
+.overlay_logo{
+	display:table-cell;
+	text-align:left;
+}
+.overlay_menu{
+	display:table-cell;
+    padding-right:45px;
+}
+
+/* -----------------------------------------------------------------------------------------------	*/
+/* 	CLASS DEFINITIONS TO DISPLAY MULTIPLE SECTIONS 2,4,6 IN A SINGLE ROW							*/
+/* -----------------------------------------------------------------------------------------------	*/
+/* 	.container			: display table																*/
+/* 	.row				: display row																*/
+/* 	.one_half			: adjust padding to display 2 cells											*/
+/* 	.one_third			: adjust padding to display 3 cells											*/
+/* 	.one_sixth			: adjust padding to display 6 cells											*/
+/* -----------------------------------------------------------------------------------------------	*/
+
+.container {
+	display: table;
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	float: none;
+}
+
+.row  {
+    display: table-row;
+}
+
+.one-half {
+    display: table-cell;
+	text-align:left;
+	vertical-align: top;
+	padding: 20px;
+}
+	
+.one-third {
+	display: table-cell;
+	text-align:center;
+	padding: 0px 50px 0px 50px;
+}
+
+.one-sixth {
+	display: table-cell;
+	text-align:center;
+	padding: 10px 50px 20px 50px;
+}
+
+
+
+

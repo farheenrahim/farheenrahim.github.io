@@ -1,0 +1,218 @@
+<!-
+-----------------------------------------------------------------------------------------------
+	AUTHOR		:	FARHEEN RAHIM															
+	DESCRIPTION	:	A PROJECT TO DEVELOP A SINGLE PAGE WEBSIT THAT TALKS ABOUT ME			
+-----------------------------------------------------------------------------------------------
+->
+
+<html>
+<head>
+	<title> FARHEEN RAHIM</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src= "javascript/script.js"></script>
+</head>
+<body>
+
+<!-
+-----------------------------------------------------------------------------------------------
+	DISPLAY MENU AND WELCOME SCREEN IMAGE
+-----------------------------------------------------------------------------------------------
+->
+
+<header  id = "home">
+
+	<div class="overlay_container">
+		<div class="overlay_row">
+			<div class="overlay_logo">
+				<a href="#home"><img src = "images/logo.png" width = "240 px" height ="50 px"></a>
+			</div>
+			<div class="overlay_menu">
+				<ul class="topmenu">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#aboutme">About me</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a href="#connect">Connect</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<img class ="homeimage">
+
+</header>
+
+<!-
+-----------------------------------------------------------------------------------------------
+	DISPLAY ABOUT ME SECTION
+-----------------------------------------------------------------------------------------------
+->
+
+
+<section id="aboutme" class="bodysection">
+	<div class = "bodyheading">
+	about:me
+	</div>
+	
+	
+	<div class="container">
+		<div class="row">
+
+
+		
+			<div class="one-third">
+				<h4>computer engineer</h4>
+				<img src ="images/grayscale_about_univ.jpg" onmouseout = 'this.src="images/grayscale_about_univ.jpg"' onmouseover = 'this.src="images/color_about_univ.jpg"' height="250 px" width="250 px">
+			</div>
+
+			<div class="one-third">
+				<h4>diploma in .NET </h4>  	
+				<img src ="images/grayscale_about_niit.jpg" onmouseout = 'this.src="images/grayscale_about_niit.jpg"' onmouseover = 'this.src="images/color_about_niit.jpg"' height="250 px" width="250 px">
+			</div>
+
+			<div class="one-third">
+				<h4>microsoft .NET certified </h4>  	    
+				<img src ="images/grayscale_about_certification.jpg" onmouseout = 'this.src="images/grayscale_about_certification.jpg"' onmouseover = 'this.src="images/color_about_certification.jpg"' height="250 px" width="250 px">
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+
+			<div class="one-sixth">
+				<img src ="images/grayscale_about_me.jpg" onmouseout = 'this.src="images/grayscale_about_me.jpg"' onmouseover = 'this.src="images/color_about_me.jpg"' height="125 px" width="125 px" ->
+			</div>
+
+			<div class="one-sixth">
+				<img src ="images/grayscale_about_passion.jpg" onmouseout = 'this.src="images/grayscale_about_passion.jpg"' onmouseover = 'this.src="images/color_about_passion.jpg"' height="125 px" width="125 px">
+			</div>
+
+			<div class="one-sixth">
+				<img src ="images/grayscale_about_code.jpg" onmouseout = 'this.src="images/grayscale_about_code.jpg"' onmouseover = 'this.src="images/color_about_code.jpg"' height="125 px" width="125 px">
+			</div>
+		
+			<div class="one-sixth">
+				<img src ="images/grayscale_about_crochet.jpg" onmouseout = 'this.src="images/grayscale_about_crochet.jpg"' onmouseover = 'this.src="images/color_about_crochet.jpg"' height="125 px" width="125 px">
+			</div>
+		
+			<div class="one-sixth">
+				<img src ="images/grayscale_about_cooking.jpg" onmouseout = 'this.src="images/grayscale_about_cooking.jpg"' onmouseover = 'this.src="images/color_about_cooking.jpg"' height="125 px" width="125 px">
+			</div>
+		
+			<div class="one-sixth">
+				<img src ="images/grayscale_about_quora.jpg" onmouseout = 'this.src="images/grayscale_about_quora.jpg"' onmouseover = 'this.src="images/color_about_quora.jpg"' height="125 px" width="125 px">
+			</div>
+
+		</div>
+	</div>
+
+
+</section>
+
+<!-
+-----------------------------------------------------------------------------------------------
+	DISPLAY GITHUB PORTFOLIO LINK 
+-----------------------------------------------------------------------------------------------
+->
+
+<section id="portfolio" class="bodysection">
+<br /><br /><br />
+<div class = "bodyheading">my:portfolio</div>
+<a href = "https://github.com/farheenrahim"><img src ="images/grayscale_portfolio_github.jpg" onmouseout = 'this.src="images/grayscale_portfolio_github.jpg"' onmouseover = 'this.src="images/color_portfolio_github.jpg"' width ="300 px" height="300 px"> </a>
+
+</section>
+
+<!-
+-----------------------------------------------------------------------------------------------
+	DISPLAY CONTACT US FORM 
+-----------------------------------------------------------------------------------------------
+->
+
+<section id ="contact"  class="bodysection">
+<br /><br /><br />
+<div class = "bodyheading">say:hello<br /></div>
+
+
+<form name="myForm" action="" onsubmit='alert("Thanks for your message!")' method="post">
+<div class="container">
+	<div class="row">
+
+		<div class="one-half">Name:</div>
+		<div class="one-half"><input type="text" name="name" size="25"/></div>
+		
+	</div>
+	
+	<div class="row">
+
+		<div class="one-half">Email:</div>
+		<div class="one-half"><input type="text" name="email" size="25"/></div>
+	
+	</div>
+	
+	<div class="row">
+
+		<div class="one-half">Message:</div>
+		<div class="one-half"><textarea name="message" rows="4" cols="30">	</textarea></div>
+	
+	</div>
+	
+		
+</div>	
+	
+	<input type ="submit" value ="send message">
+</section>
+
+<!-
+-----------------------------------------------------------------------------------------------
+	DISPLAY SOCIAL MEDIA LINKS 
+-----------------------------------------------------------------------------------------------
+->
+
+
+<section id="connect" class="bodysection">
+<br /><br /><br />
+<div class = "bodyheading">stay:in:touch</div> <br />
+<br />
+<br />
+<br />
+<br />
+<div class="container">
+  <div class="row">
+
+  	<div class="one-third">
+		<a href = "http://www.linkedin.com/in/farheenrahim" target="_blank">
+		<img src ="images/grayscale_connect_linkedin.jpg" onmouseout = 'this.src="images/grayscale_connect_linkedin.jpg"' onmouseover = 'this.src="images/color_connect_linkedin.jpg"' height="50 px" width="50 px">
+		</a>
+	</div>
+
+  	<div class="one-third">
+		<a href = "https://twitter.com/farheenrh" target="_blank">
+		<img src ="images/grayscale_connect_twitter.jpg" onmouseout = 'this.src="images/grayscale_connect_twitter.jpg"' onmouseover = 'this.src="images/color_connect_twitter.jpg"' height="50 px" width="50 px">
+		</a>
+	</div>
+
+  	<div class="one-third">
+		<a href = "https://www.quora.com/Farheen-Rahim-1" target="_blank">
+		<img src ="images/grayscale_about_quora.jpg" onmouseout = 'this.src="images/grayscale_about_quora.jpg"' onmouseover = 'this.src="images/color_about_quora.jpg"' height="50 px" width="50 px">
+		</a>
+	</div>
+  
+	</div>
+</div>
+
+</section>
+
+<br />
+<br />
+<br />
+<br />
+
+<br />
+<br />
+<br />
+<div align = "center">© Copyright Farheen Rahim 2017</div>
+
+</body>
+</html>
